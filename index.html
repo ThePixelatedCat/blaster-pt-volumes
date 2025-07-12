@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Blaster Volumes</title>
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <script async src="scripts/main.js"></script>
-  </head>
-  <body>
-    <h1>A Collection of Blaster Volume Data</h1>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>Blaster Volumes</title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <script async src="scripts/main.js"></script>
+    </head>
+    <body>
+        <h1>A Collection of Blaster Volume Data</h1>
+
+        <input type="text" id="table-search" onkeyup="searchFunction()" placeholder="Search for blaster names..">
+
+        <table id="data-table" cellspacing="0" cellpadding="1">
+            <colgroup>
+                <col class="col-blaster"/>
+                <col class="col-volume"/>
+                <col class="col-id"/>
+                <col class="col-draw"/>
+            </colgroup>
+
+            <tr class="row-headers">
+                <td class="header">
+                    <p>BLASTER</p>
+                </td><td class="header">
+                    <p>VOLUME (cm<span class="superscript">3</span>)</p>
+                </td><td class="header">
+                    <p>ID (mm)</p>
+                </td><td class="header">
+                    <p>DRAW (mm)</p>
+                </td>
+            </tr>
+
+            <tr class="rows-body">
+                <td class="data">
+                    <p>PK Knight-L</p>
+                </td><td class="data">
+                    <p>132.32</p>
+                </td><td class="data">
+                    <p>36</p>
+                </td><td class="data">
+                    <p>130</p>
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>

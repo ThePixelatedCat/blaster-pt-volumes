@@ -1,40 +1,44 @@
-html {
-  font-size: 10px;
-  font-family: 'Consolas', 'Courier New', monospace;
+:root {
+  --background-color: rgb(20, 26, 31);
 }
 
+html {
+    font-size: 16px;
+    line-height: 1;
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: var(--background-color);
+}
 
 h1 {
-  font-size: 60px;
-  text-align: center;
-  font-family: 'Bauhaus 93', sans-serif;
-}
-
-p, li, samp {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
-
-html {
-  background-color: #00539F;
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: gray;
+    letter-spacing: 1px;
 }
 
 body {
-  width: 600px;
-  margin: 0 auto;
-  background-color: solid black;
-  padding: 0 20px 20px 20px;
+    margin: 0;
+    background-color: var(--background-color);
+    padding: 0;
 }
 
-h1 {
-  margin: 0;
-  padding: 20px 0;
-  color: #a00cab;
+iframe {
+    display: block;
+    margin: 0 auto;
+    border: 1;
+    background-color: var(--background-color);
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-}
+.header{ font-size:18pt; font-family:'Liberation Sans'; font-weight:bold; }
+.data{ font-size:10pt; font-family:'Liberation Sans'; }
+.col-blaster{ text-align:left; width:3.15cm; }
+.col-volume{ text-align:left; width:4.55cm; }
+.col-id{ text-align:left; width:2.45cm; }
+.col-draw{ text-align:left; width:3.75cm; }
+.row-headers{ height:0.8cm; }
+.rows-body{ height:0.455cm; }
+.superscript{ vertical-align:super; font-size:58%;}
+td { vertical-align:top; font-size:10pt; border:1; border: solid; }
+table { border-collapse:collapse; border-spacing:0; border:1; border: solid; empty-cells:show; writing-mode:horizontal-tb; direction:ltr; }
