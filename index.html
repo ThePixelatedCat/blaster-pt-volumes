@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
+    <link rel="stylesheet" href="DataTables/datatables.css" />
+    <script src="DataTables/datatables.js"></script>
     <head>
         <meta charset="utf-8">
         <title>Blaster Volumes</title>
@@ -8,280 +10,27 @@
     </head>
     <body>
         <h1>A Collection of Blaster Volume Data</h1>
+        
+        <table id="data-table" class="display compact">
+            <thead>
+                <tr>
+                    <th>BLASTER</th>
+                    <th>VOLUME (cm<span class="superscript">3</span>)</th>
+                    <th>DRAW (mm)</th>
+                    <th>ID (mm)</th>
+                    <th>TAGS</th>
+                </tr>
+            </thead>
 
-        <input type="text" id="table-search" onkeyup="searchFunction()" placeholder="Search for blaster names..">
-
-        <table id="data-table">
-            <colgroup>
-                <col class="col-blaster"/>
-                <col class="col-volume"/>
-                <col class="col-id"/>
-                <col class="col-draw"/>
-            </colgroup>
-
-            <tr class="row-headers">
-                <th>
-                    <p>BLASTER</p>
-                </th><th>
-                    <p>VOLUME (cm<span class="superscript">3</span>)</p>
-                </th><th>
-                    <p>ID (mm)</p>
-                </th><th>
-                    <p>DRAW (mm)</p>
-                </th>
-            </tr>
-
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-                        
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
-            
-            <tr class="rows-body">
-                <td class="data">
-                    <p>PK Knight-L</p>
-                </td><td class="data">
-                    <p>132.32</p>
-                </td><td class="data">
-                    <p>36</p>
-                </td><td class="data">
-                    <p>130</p>
-                </td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>Volume</td>
+                    <td>Draw</td>
+                    <td>ID</td>
+                    <td>Tags</td>
+                </tr>
+            </tbody>
         </table>
     </body>
 </html>
