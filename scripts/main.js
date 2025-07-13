@@ -1,19 +1,38 @@
 const TAGS = Object.freeze({
+    /* Material/Production Process */
     PRINTED: '3D Printed',
-    MAGFED: 'Mag-Fed',
-    INJECTION_MOLDED: 'Injection Molded',
-    SILLYBUTTS: 'Sillybutts',
-    CHARAMILE_DESIGNS: 'Charamile Designs',
+    INJECTION_MOULDED: 'Injection Moulded',
+    METAL: 'Metal',
+
+    /* Loading Mechanism */
+    MAG: 'Mag Fed',
+    CYLINDER: 'Cylinder Fed',
+    SINGLESHOT: 'Single Shot',
+
+    /* 1st-Party Company */
     HASBRO: 'Hasbro',
     BUZZ_BEE: 'Buzz Bee',
     DZ: 'Dart Zone',
+    SIREN: 'Siren',
+    XSHOT: 'X-Shot',
+    /* 3rd-Party Company */
+    SABRE: 'Sabre',
+    WORKER: 'Worker',
+    /* Hobby Designer */
+    SILLYBUTTS: 'Sillybutts',
+    CHARAMILE: 'Charamile Designs',
     PK: 'Printkeep!',
-    ORION_BLASTER: 'Orion Blasters',
+    ORION: 'Orion Blasters',
+    FLP: 'FLP',
+    
+    /* Misc */
+    TURNAROUND: 'Turnaround',
 });
 
 let data = [
-    new Blaster( 'Knight-L', '130', '36', TAGS.PRINTED, TAGS.MAGFED, TAGS.PK ),
-    new Blaster( 'Lynx 2.x', '100.0125', '34.925', TAGS.PRINTED, TAGS.MAGFED, TAGS.ORION_BLASTER ),
+    new Blaster( 'Knight-L', '130', '36', TAGS.PRINTED, TAGS.MAG, TAGS.PK ),
+    new Blaster( 'Lynx 2.x', '100.0125', '34.925', TAGS.PRINTED, TAGS.MAG, TAGS.ORION, TAGS.TURNAROUND ),
+    new Blaster( 'Falx', '120', '34.925', TAGS.PRINTED, TAGS.METAL, TAGS.MAG, TAGS.FLP )
 ]
 
 function Blaster ( name, draw, id, ...tags ) {
