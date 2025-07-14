@@ -31,8 +31,6 @@ thead {
 
 tbody { font-size:13pt; }
 
-th { text-align: center; }
-
 td { text-wrap-style: balance; }
 
 div#data-table_info.dt-info, label, input#dt-search-0.dt-input {
