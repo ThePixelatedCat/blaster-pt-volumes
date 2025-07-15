@@ -18,11 +18,11 @@ function Blaster ( name, draw, id, maker ) {
 $('#data-table').DataTable( {
     data,
     columns: [
+        { data: 'maker', className: 'dt-center' },
         { data: 'name', className: 'dt-center' },
-        { data: 'volume', className: 'dt-center', searchable: false },
         { data: 'draw', className: 'dt-center', searchable: false },
         { data: 'id', className: 'dt-center', searchable: false },
-        { data: 'maker', className: 'dt-center' }
+        { data: 'volume', className: 'dt-center', searchable: false },
     ],
     scrollY: '650px',
     scrollCollapse: true,
